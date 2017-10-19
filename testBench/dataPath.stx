@@ -1,0 +1,67 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:/TE/Winter/VLSI/finalProj2/testBench/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to E:/TE/Winter/VLSI/finalProj2/testBench/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "mux2_1.v" in library work
+Compiling verilog file "inverter.v" in library work
+Module <mux2_1> compiled
+Compiling verilog file "zeroDetector.v" in library work
+Module <inverter> compiled
+Compiling verilog file "orD.v" in library work
+Module <zeroDetector> compiled
+Compiling verilog file "mux4_1.v" in library work
+Module <orD> compiled
+Compiling verilog file "Cond_inv_module.v" in library work
+Module <mux4_1> compiled
+Compiling verilog file "andN.v" in library work
+Module <Cond_inv_module> compiled
+Compiling verilog file "Adder.v" in library work
+Module <andN> compiled
+Compiling verilog file "RegFile.v" in library work
+Module <Adder> compiled
+Compiling verilog file "mux_2_1_3.v" in library work
+Module <RegFile> compiled
+Compiling verilog file "mux3_1.v" in library work
+Module <mux_2_1_3> compiled
+Compiling verilog file "flop.v" in library work
+Module <mux3_1> compiled
+Compiling verilog file "ff_en_r.v" in library work
+Module <flop> compiled
+Compiling verilog file "ff_en.v" in library work
+Module <ff_en_r> compiled
+Compiling verilog file "alu.v" in library work
+Module <ff_en> compiled
+Compiling verilog file "dataPath.v" in library work
+Module <alu> compiled
+Module <dataPath> compiled
+No errors in compilation
+Analysis of file <"dataPath.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> 
+
+Total memory usage is 203108 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

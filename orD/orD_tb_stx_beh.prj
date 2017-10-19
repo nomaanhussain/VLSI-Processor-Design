@@ -1,0 +1,3 @@
+verilog isim_temp "orD.v"
+verilog isim_temp "orD_tb.v"
+verilog isim_temp "F:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

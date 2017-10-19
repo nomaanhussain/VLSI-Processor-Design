@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/TE/Winter/VLSI/finalProj/zeroDetector/zeroDetector.xst" -ofn "E:/TE/Winter/VLSI/finalProj/zeroDetector/zeroDetector.syr" 

@@ -1,0 +1,3 @@
+verilog work "ff_en_r.v"
+verilog work "ff_en_r_tb.v"
+verilog work "E:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

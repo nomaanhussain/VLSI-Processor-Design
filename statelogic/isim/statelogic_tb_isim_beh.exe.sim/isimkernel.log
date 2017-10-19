@@ -1,0 +1,28 @@
+Command line:
+   statelogic_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  2059
+
+Fri Sep 01 20:25:41 2017
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 506.642 Meg
+
+ Total Signals          : 17
+ Total Nets             : 25
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 14
+ Total Traceable Variables  : 41
+ Total Scalar Nets and Variables : 645
+
+ Total Simulation Time: 0.202801 sec
+
+ Current Memory Usage: 506.642 Meg
+
+Fri Sep 01 20:27:35 2017
+

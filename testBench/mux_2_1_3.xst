@@ -1,0 +1,5 @@
+set -tmpdir "E:/TE/Winter/VLSI/finalProj/testBench/xst/projnav.tmp"
+set -xsthdpdir "E:/TE/Winter/VLSI/finalProj/testBench/xst"
+elaborate
+-ifn mux_2_1_3.prj
+-ifmt mixed

@@ -1,0 +1,19 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "E:/TE/Winter/VLSI/finalProj/ff_en/ff_en_tb_isim_beh.exe" -prj "E:/TE/Winter/VLSI/finalProj/ff_en/ff_en_tb_beh.prj" "work.ff_en_tb" "work.glbl" 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/ff_en/ff_en.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/ff_en/ff_en_tb.v" into library work
+Analyzing Verilog file "E:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module ff_en
+Compiling module ff_en_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable E:/TE/Winter/VLSI/finalProj/ff_en/ff_en_tb_isim_beh.exe
+Fuse Memory Usage: 26264 KB
+Fuse CPU Usage: 468 ms

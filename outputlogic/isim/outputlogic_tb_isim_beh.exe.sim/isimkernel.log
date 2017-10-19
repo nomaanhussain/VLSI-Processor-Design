@@ -1,0 +1,28 @@
+Command line:
+   outputlogic_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  2071
+
+Fri Sep 01 21:14:09 2017
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 506.642 Meg
+
+ Total Signals          : 27
+ Total Nets             : 36
+ Total Signal Drivers   : 19
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 22
+ Total Traceable Variables  : 45
+ Total Scalar Nets and Variables : 555
+
+ Total Simulation Time: 0.0936 sec
+
+ Current Memory Usage: 506.642 Meg
+
+Fri Sep 01 21:20:24 2017
+

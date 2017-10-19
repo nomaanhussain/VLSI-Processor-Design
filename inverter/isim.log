@@ -1,0 +1,18 @@
+ISim log file
+Running: C:\Users\AS\Desktop\VLSI project\inverter\inv_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/AS/Desktop/VLSI project/inverter/inv_tb_isim_beh.wdb 
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+in = 11110000out = xxxxxxxx
+in = 11110000out = 00001111
+Finished circuit initialization process.
+in = 10101010out = 00001111
+in = 10101010out = 01010101
+in = 00110011out = 01010101
+in = 00110011out = 11001100
+in = 11100111out = 11001100
+in = 11100111out = 00011000

@@ -1,0 +1,742 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: dataPath.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "dataPath.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "dataPath"
+Output Format                      : NGC
+Target Device                      : xc3s50-4-pq208
+
+---- Source Options
+Top Module Name                    : dataPath
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "mux2_1.v" in library work
+Compiling verilog file "inverter.v" in library work
+Module <mux2_1> compiled
+Compiling verilog file "zeroDetector.v" in library work
+Module <inverter> compiled
+Compiling verilog file "orD.v" in library work
+Module <zeroDetector> compiled
+Compiling verilog file "mux4_1.v" in library work
+Module <orD> compiled
+Compiling verilog file "Cond_inv_module.v" in library work
+Module <mux4_1> compiled
+Compiling verilog file "andN.v" in library work
+Module <Cond_inv_module> compiled
+Compiling verilog file "Adder.v" in library work
+Module <andN> compiled
+Compiling verilog file "RegFile.v" in library work
+Module <Adder> compiled
+Compiling verilog file "mux_2_1_3.v" in library work
+Module <RegFile> compiled
+Compiling verilog file "mux3_1.v" in library work
+Module <mux_2_1_3> compiled
+Compiling verilog file "flop.v" in library work
+Module <mux3_1> compiled
+Compiling verilog file "ff_en_r.v" in library work
+Module <flop> compiled
+Compiling verilog file "ff_en.v" in library work
+Module <ff_en_r> compiled
+Compiling verilog file "alu.v" in library work
+Module <ff_en> compiled
+Compiling verilog file "dataPath.v" in library work
+Module <alu> compiled
+Module <dataPath> compiled
+No errors in compilation
+Analysis of file <"dataPath.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <dataPath> in library <work>.
+
+Analyzing hierarchy for module <mux_2_1_3> in library <work>.
+
+Analyzing hierarchy for module <ff_en> in library <work>.
+
+Analyzing hierarchy for module <ff_en_r> in library <work>.
+
+Analyzing hierarchy for module <flop> in library <work>.
+
+Analyzing hierarchy for module <mux2_1> in library <work>.
+
+Analyzing hierarchy for module <mux4_1> in library <work>.
+
+Analyzing hierarchy for module <mux3_1> in library <work>.
+
+Analyzing hierarchy for module <RegFile> in library <work>.
+
+Analyzing hierarchy for module <alu> in library <work>.
+
+Analyzing hierarchy for module <andN> in library <work>.
+
+Analyzing hierarchy for module <orD> in library <work>.
+
+Analyzing hierarchy for module <Cond_inv_module> in library <work>.
+
+Analyzing hierarchy for module <Adder> in library <work>.
+
+Analyzing hierarchy for module <mux4_1> in library <work>.
+
+Analyzing hierarchy for module <zeroDetector> in library <work>.
+
+Analyzing hierarchy for module <inverter> in library <work>.
+
+Analyzing hierarchy for module <mux2_1> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <dataPath>.
+Module <dataPath> is correct for synthesis.
+ 
+Analyzing module <mux_2_1_3> in library <work>.
+Module <mux_2_1_3> is correct for synthesis.
+ 
+Analyzing module <ff_en> in library <work>.
+Module <ff_en> is correct for synthesis.
+ 
+Analyzing module <ff_en_r> in library <work>.
+Module <ff_en_r> is correct for synthesis.
+ 
+Analyzing module <flop> in library <work>.
+Module <flop> is correct for synthesis.
+ 
+Analyzing module <mux2_1> in library <work>.
+Module <mux2_1> is correct for synthesis.
+ 
+Analyzing module <mux4_1> in library <work>.
+Module <mux4_1> is correct for synthesis.
+ 
+Analyzing module <mux3_1> in library <work>.
+Module <mux3_1> is correct for synthesis.
+ 
+Analyzing module <RegFile> in library <work>.
+Module <RegFile> is correct for synthesis.
+ 
+Analyzing module <alu> in library <work>.
+Module <alu> is correct for synthesis.
+ 
+Analyzing module <andN> in library <work>.
+Module <andN> is correct for synthesis.
+ 
+Analyzing module <orD> in library <work>.
+Module <orD> is correct for synthesis.
+ 
+Analyzing module <Cond_inv_module> in library <work>.
+Module <Cond_inv_module> is correct for synthesis.
+ 
+Analyzing module <inverter> in library <work>.
+Module <inverter> is correct for synthesis.
+ 
+Analyzing module <Adder> in library <work>.
+Module <Adder> is correct for synthesis.
+ 
+Analyzing module <zeroDetector> in library <work>.
+Module <zeroDetector> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mux_2_1_3>.
+    Related source file is "mux_2_1_3.v".
+Unit <mux_2_1_3> synthesized.
+
+
+Synthesizing Unit <ff_en>.
+    Related source file is "ff_en.v".
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <ff_en> synthesized.
+
+
+Synthesizing Unit <ff_en_r>.
+    Related source file is "ff_en_r.v".
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <ff_en_r> synthesized.
+
+
+Synthesizing Unit <flop>.
+    Related source file is "flop.v".
+    Found 8-bit register for signal <tmp>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <flop> synthesized.
+
+
+Synthesizing Unit <mux2_1>.
+    Related source file is "mux2_1.v".
+Unit <mux2_1> synthesized.
+
+
+Synthesizing Unit <mux4_1>.
+    Related source file is "mux4_1.v".
+    Found 8-bit 4-to-1 multiplexer for signal <t1>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <mux4_1> synthesized.
+
+
+Synthesizing Unit <mux3_1>.
+    Related source file is "mux3_1.v".
+    Found 8-bit 4-to-1 multiplexer for signal <t1>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <mux3_1> synthesized.
+
+
+Synthesizing Unit <RegFile>.
+    Related source file is "RegFile.v".
+    Found 8x8-bit dual-port RAM <Mram_RAM> for signal <RAM>.
+    Found 8x8-bit dual-port RAM <Mram_RAM_ren> for signal <RAM>.
+WARNING:Xst:737 - Found 8-bit latch for signal <rd1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 RAM(s).
+Unit <RegFile> synthesized.
+
+
+Synthesizing Unit <andN>.
+    Related source file is "andN.v".
+Unit <andN> synthesized.
+
+
+Synthesizing Unit <orD>.
+    Related source file is "orD.v".
+Unit <orD> synthesized.
+
+
+Synthesizing Unit <Adder>.
+    Related source file is "Adder.v".
+    Found 8-bit adder carry in for signal <t1>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+
+Synthesizing Unit <zeroDetector>.
+    Related source file is "zeroDetector.v".
+Unit <zeroDetector> synthesized.
+
+
+Synthesizing Unit <inverter>.
+    Related source file is "inverter.v".
+Unit <inverter> synthesized.
+
+
+Synthesizing Unit <Cond_inv_module>.
+    Related source file is "Cond_inv_module.v".
+Unit <Cond_inv_module> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "alu.v".
+WARNING:Xst:646 - Signal <inb2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <dataPath>.
+    Related source file is "dataPath.v".
+WARNING:Xst:647 - Input <memwrite> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <CONST_ZERO> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <CONST_ONE> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+Unit <dataPath> synthesized.
+
+WARNING:Xst:524 - All outputs of the instance <inb_inv> of the block <Cond_inv_module> are unconnected in block <alu>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 8x8-bit dual-port RAM                                 : 2
+# Adders/Subtractors                                   : 1
+ 8-bit adder carry in                                  : 1
+# Registers                                            : 9
+ 8-bit register                                        : 9
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+# Multiplexers                                         : 3
+ 8-bit 4-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <RegFile>.
+INFO:Xst:3231 - The small RAM <Mram_RAM_ren> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <regwrite>      | high     |
+    |     addrA          | connected to signal <wa>            |          |
+    |     diA            | connected to signal <wd>            |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     addrB          | connected to signal <ra2>           |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_RAM> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <regwrite>      | high     |
+    |     addrA          | connected to signal <wa>            |          |
+    |     diA            | connected to signal <wd>            |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     addrB          | connected to signal <ra1>           |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <RegFile> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 8x8-bit dual-port distributed RAM                     : 2
+# Adders/Subtractors                                   : 1
+ 8-bit adder carry in                                  : 1
+# Registers                                            : 72
+ Flip-Flops                                            : 72
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+# Multiplexers                                         : 3
+ 8-bit 4-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <dataPath> ...
+
+Optimizing unit <ff_en_r> ...
+
+Optimizing unit <flop> ...
+
+Optimizing unit <RegFile> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block dataPath, actual ratio is 10.
+FlipFlop ir2/q_7 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop ir2/q_6 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop ir2/q_5 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop ir2/q_2 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop ir2/q_1 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop ir2/q_0 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop ir1/q_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop ir1/q_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop ir1/q_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop ir0/q_7 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop ir0/q_6 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop ir0/q_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop ir0/q_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop ir0/q_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop ir0/q_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop ir0/q_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop ir0/q_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch rf/rd1_7 has been replicated 1 time(s) to handle iob=true attribute.
+Latch rf/rd1_6 has been replicated 1 time(s) to handle iob=true attribute.
+Latch rf/rd1_5 has been replicated 1 time(s) to handle iob=true attribute.
+Latch rf/rd1_4 has been replicated 1 time(s) to handle iob=true attribute.
+Latch rf/rd1_3 has been replicated 1 time(s) to handle iob=true attribute.
+Latch rf/rd1_2 has been replicated 1 time(s) to handle iob=true attribute.
+Latch rf/rd1_1 has been replicated 1 time(s) to handle iob=true attribute.
+Latch rf/rd1_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 95
+ Flip-Flops                                            : 95
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : dataPath.ngr
+Top Level Output File Name         : dataPath
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 158
+
+Cell Usage :
+# BELS                             : 136
+#      GND                         : 1
+#      LUT2                        : 8
+#      LUT3                        : 42
+#      LUT3_D                      : 6
+#      LUT4                        : 56
+#      LUT4_D                      : 6
+#      MUXCY                       : 7
+#      MUXF5                       : 2
+#      XORCY                       : 8
+# FlipFlops/Latches                : 111
+#      FD                          : 32
+#      FDE                         : 55
+#      FDRE                        : 8
+#      LD_1                        : 16
+# RAMS                             : 16
+#      RAM16X1D                    : 16
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 156
+#      IBUF                        : 26
+#      OBUF                        : 130
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-4 
+
+ Number of Slices:                       80  out of    768    10%  
+ Number of Slice Flip Flops:             65  out of   1536     4%  
+ Number of 4 input LUTs:                150  out of   1536     9%  
+    Number used as logic:               118
+    Number used as RAMs:                 32
+ Number of IOs:                         158
+ Number of bonded IOBs:                 157  out of    124   126% (*) 
+    IOB Flip Flops:                      46
+ Number of GCLKs:                         2  out of      8    25%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 111   |
+regwrite                           | IBUF+BUFG              | 16    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.394ns (Maximum Frequency: 106.451MHz)
+   Minimum input arrival time before clock: 10.162ns
+   Maximum output required time after clock: 17.955ns
+   Maximum combinational path delay: 18.723ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.394ns (frequency: 106.451MHz)
+  Total number of paths / destination ports: 884 / 136
+-------------------------------------------------------------------------
+Delay:               9.394ns (Levels of Logic = 13)
+  Source:            wrdreg/tmp_0 (FF)
+  Destination:       pcreg/q_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: wrdreg/tmp_0 to pcreg/q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.720   0.945  wrdreg/tmp_0 (wrdreg/tmp_0)
+     LUT4:I2->O            3   0.551   1.246  src2mux/Mmux_t111 (src2_0_OBUF)
+     LUT2:I0->O            1   0.551   0.000  alunit/addblock/Madd_t1_lut<0> (alunit/addblock/Madd_t1_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  alunit/addblock/Madd_t1_cy<0> (alunit/addblock/Madd_t1_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<1> (alunit/addblock/Madd_t1_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<2> (alunit/addblock/Madd_t1_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<3> (alunit/addblock/Madd_t1_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<4> (alunit/addblock/Madd_t1_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<5> (alunit/addblock/Madd_t1_cy<5>)
+     MUXCY:CI->O           0   0.064   0.000  alunit/addblock/Madd_t1_cy<6> (alunit/addblock/Madd_t1_cy<6>)
+     XORCY:CI->O           4   0.904   0.985  alunit/addblock/Madd_t1_xor<7> (alunit/sumResult<7>)
+     LUT3:I2->O            1   0.551   0.000  alunit/resultmux/Mmux_t1_3 (alunit/resultmux/Mmux_t1_3)
+     MUXF5:I1->O           4   0.360   0.943  alunit/resultmux/Mmux_t1_2_f5 (alucheck_0_OBUF)
+     LUT4:I3->O            2   0.551   0.000  pcmux/Mmux_t121 (nextpcvalue_0_OBUF)
+     FDRE:D                    0.203          pcreg/q_0
+    ----------------------------------------
+    Total                      9.394ns (5.275ns logic, 4.119ns route)
+                                       (56.2% logic, 43.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 760 / 230
+-------------------------------------------------------------------------
+Offset:              10.162ns (Levels of Logic = 14)
+  Source:            alusrcb<1> (PAD)
+  Destination:       pcreg/q_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: alusrcb<1> to pcreg/q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   0.821   1.612  alusrcb_1_IBUF (alusrcb_1_IBUF)
+     LUT4:I1->O            3   0.551   1.246  src2mux/Mmux_t111 (src2_0_OBUF)
+     LUT2:I0->O            1   0.551   0.000  alunit/addblock/Madd_t1_lut<0> (alunit/addblock/Madd_t1_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  alunit/addblock/Madd_t1_cy<0> (alunit/addblock/Madd_t1_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<1> (alunit/addblock/Madd_t1_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<2> (alunit/addblock/Madd_t1_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<3> (alunit/addblock/Madd_t1_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<4> (alunit/addblock/Madd_t1_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<5> (alunit/addblock/Madd_t1_cy<5>)
+     MUXCY:CI->O           0   0.064   0.000  alunit/addblock/Madd_t1_cy<6> (alunit/addblock/Madd_t1_cy<6>)
+     XORCY:CI->O           4   0.904   0.985  alunit/addblock/Madd_t1_xor<7> (alunit/sumResult<7>)
+     LUT3:I2->O            1   0.551   0.000  alunit/resultmux/Mmux_t1_3 (alunit/resultmux/Mmux_t1_3)
+     MUXF5:I1->O           4   0.360   0.943  alunit/resultmux/Mmux_t1_2_f5 (alucheck_0_OBUF)
+     LUT4:I3->O            2   0.551   0.000  pcmux/Mmux_t121 (nextpcvalue_0_OBUF)
+     FDRE:D                    0.203          pcreg/q_0
+    ----------------------------------------
+    Total                     10.162ns (5.376ns logic, 4.786ns route)
+                                       (52.9% logic, 47.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1143 / 111
+-------------------------------------------------------------------------
+Offset:              17.955ns (Levels of Logic = 12)
+  Source:            wrdreg/tmp_0 (FF)
+  Destination:       zero (PAD)
+  Source Clock:      clk rising
+
+  Data Path: wrdreg/tmp_0 to zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.720   0.945  wrdreg/tmp_0 (wrdreg/tmp_0)
+     LUT4:I2->O            3   0.551   1.246  src2mux/Mmux_t111 (src2_0_OBUF)
+     LUT2:I0->O            1   0.551   0.000  alunit/addblock/Madd_t1_lut<0> (alunit/addblock/Madd_t1_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  alunit/addblock/Madd_t1_cy<0> (alunit/addblock/Madd_t1_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<1> (alunit/addblock/Madd_t1_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<2> (alunit/addblock/Madd_t1_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<3> (alunit/addblock/Madd_t1_cy<3>)
+     XORCY:CI->O           2   0.904   0.903  alunit/addblock/Madd_t1_xor<4> (alunit/sumResult<4>)
+     LUT4_D:I3->O          1   0.551   1.140  alunit/resultmux/Mmux_t18 (alucheck<4>1)
+     LUT2:I0->O            1   0.551   0.827  alunit/zd/y10 (alunit/zd/y10)
+     LUT4:I3->O            1   0.551   0.827  alunit/zd/y16_SW0 (N59)
+     LUT4:I3->O            1   0.551   0.801  alunit/zd/y16 (zero_OBUF)
+     OBUF:I->O                 5.644          zero_OBUF (zero)
+    ----------------------------------------
+    Total                     17.955ns (11.266ns logic, 6.689ns route)
+                                       (62.7% logic, 37.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'regwrite'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              7.078ns (Levels of Logic = 1)
+  Source:            rf/rd1_7_1 (LATCH)
+  Destination:       read1<7> (PAD)
+  Source Clock:      regwrite rising
+
+  Data Path: rf/rd1_7_1 to read1<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             1   0.633   0.801  rf/rd1_7_1 (rf/rd1_7_1)
+     OBUF:I->O                 5.644          read1_7_OBUF (read1<7>)
+    ----------------------------------------
+    Total                      7.078ns (6.277ns logic, 0.801ns route)
+                                       (88.7% logic, 11.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 850 / 50
+-------------------------------------------------------------------------
+Delay:               18.723ns (Levels of Logic = 13)
+  Source:            alusrcb<1> (PAD)
+  Destination:       zero (PAD)
+
+  Data Path: alusrcb<1> to zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   0.821   1.612  alusrcb_1_IBUF (alusrcb_1_IBUF)
+     LUT4:I1->O            3   0.551   1.246  src2mux/Mmux_t111 (src2_0_OBUF)
+     LUT2:I0->O            1   0.551   0.000  alunit/addblock/Madd_t1_lut<0> (alunit/addblock/Madd_t1_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  alunit/addblock/Madd_t1_cy<0> (alunit/addblock/Madd_t1_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<1> (alunit/addblock/Madd_t1_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<2> (alunit/addblock/Madd_t1_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  alunit/addblock/Madd_t1_cy<3> (alunit/addblock/Madd_t1_cy<3>)
+     XORCY:CI->O           2   0.904   0.903  alunit/addblock/Madd_t1_xor<4> (alunit/sumResult<4>)
+     LUT4_D:I3->O          1   0.551   1.140  alunit/resultmux/Mmux_t18 (alucheck<4>1)
+     LUT2:I0->O            1   0.551   0.827  alunit/zd/y10 (alunit/zd/y10)
+     LUT4:I3->O            1   0.551   0.827  alunit/zd/y16_SW0 (N59)
+     LUT4:I3->O            1   0.551   0.801  alunit/zd/y16 (zero_OBUF)
+     OBUF:I->O                 5.644          zero_OBUF (zero)
+    ----------------------------------------
+    Total                     18.723ns (11.367ns logic, 7.356ns route)
+                                       (60.7% logic, 39.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.22 secs
+ 
+--> 
+
+Total memory usage is 247912 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

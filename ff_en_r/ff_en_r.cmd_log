@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/TE/Winter/VLSI/finalProj/ff_en_r/ff_en_r.xst" -ofn "E:/TE/Winter/VLSI/finalProj/ff_en_r/ff_en_r.syr" 

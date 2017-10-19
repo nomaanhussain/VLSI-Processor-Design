@@ -1,0 +1,28 @@
+Command line:
+   zeroD_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  10750
+
+Thu Aug 31 17:11:20 2017
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 357.589 Meg
+
+ Total Signals          : 16
+ Total Nets             : 22
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 110
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 672.178 Meg
+
+Thu Aug 31 17:12:39 2017
+

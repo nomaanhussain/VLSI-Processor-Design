@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/TE/Winter/VLSI/finalProj/mux4_1/mux4_1.xst" -ofn "E:/TE/Winter/VLSI/finalProj/mux4_1/mux4_1.syr" 

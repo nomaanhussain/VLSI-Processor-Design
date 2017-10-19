@@ -1,0 +1,414 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: alu.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "alu.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "alu"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-tq144
+
+---- Source Options
+Top Module Name                    : alu
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "mux2_1.v" in library work
+Compiling verilog file "inverter.v" in library work
+Module <mux2_1> compiled
+Compiling verilog file "zeroDetector.v" in library work
+Module <inverter> compiled
+Compiling verilog file "orD.v" in library work
+Module <zeroDetector> compiled
+Compiling verilog file "mux4_1.v" in library work
+Module <orD> compiled
+Compiling verilog file "Cond_inv_module.v" in library work
+Module <mux4_1> compiled
+Compiling verilog file "andN.v" in library work
+Module <Cond_inv_module> compiled
+Compiling verilog file "Adder.v" in library work
+Module <andN> compiled
+Compiling verilog file "alu.v" in library work
+Module <Adder> compiled
+Module <alu> compiled
+No errors in compilation
+Analysis of file <"alu.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <alu> in library <work>.
+
+Analyzing hierarchy for module <andN> in library <work>.
+
+Analyzing hierarchy for module <orD> in library <work>.
+
+Analyzing hierarchy for module <Cond_inv_module> in library <work>.
+
+Analyzing hierarchy for module <Adder> in library <work>.
+
+Analyzing hierarchy for module <mux4_1> in library <work>.
+
+Analyzing hierarchy for module <zeroDetector> in library <work>.
+
+Analyzing hierarchy for module <inverter> in library <work>.
+
+Analyzing hierarchy for module <mux2_1> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <alu>.
+Module <alu> is correct for synthesis.
+ 
+Analyzing module <andN> in library <work>.
+Module <andN> is correct for synthesis.
+ 
+Analyzing module <orD> in library <work>.
+Module <orD> is correct for synthesis.
+ 
+Analyzing module <Cond_inv_module> in library <work>.
+Module <Cond_inv_module> is correct for synthesis.
+ 
+Analyzing module <inverter> in library <work>.
+Module <inverter> is correct for synthesis.
+ 
+Analyzing module <mux2_1> in library <work>.
+Module <mux2_1> is correct for synthesis.
+ 
+Analyzing module <Adder> in library <work>.
+Module <Adder> is correct for synthesis.
+ 
+Analyzing module <mux4_1> in library <work>.
+Module <mux4_1> is correct for synthesis.
+ 
+Analyzing module <zeroDetector> in library <work>.
+Module <zeroDetector> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <andN>.
+    Related source file is "andN.v".
+Unit <andN> synthesized.
+
+
+Synthesizing Unit <orD>.
+    Related source file is "orD.v".
+Unit <orD> synthesized.
+
+
+Synthesizing Unit <Adder>.
+    Related source file is "Adder.v".
+    Found 8-bit adder carry in for signal <t1>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+
+Synthesizing Unit <mux4_1>.
+    Related source file is "mux4_1.v".
+    Found 8-bit 4-to-1 multiplexer for signal <t1>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <mux4_1> synthesized.
+
+
+Synthesizing Unit <zeroDetector>.
+    Related source file is "zeroDetector.v".
+Unit <zeroDetector> synthesized.
+
+
+Synthesizing Unit <inverter>.
+    Related source file is "inverter.v".
+Unit <inverter> synthesized.
+
+
+Synthesizing Unit <mux2_1>.
+    Related source file is "mux2_1.v".
+Unit <mux2_1> synthesized.
+
+
+Synthesizing Unit <Cond_inv_module>.
+    Related source file is "Cond_inv_module.v".
+Unit <Cond_inv_module> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "alu.v".
+WARNING:Xst:646 - Signal <inb2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <alu> synthesized.
+
+WARNING:Xst:524 - All outputs of the instance <inb_inv> of the block <Cond_inv_module> are unconnected in block <alu>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder carry in                                  : 1
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder carry in                                  : 1
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <alu> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block alu, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : alu.ngr
+Top Level Output File Name         : alu
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 51
+#      LUT2                        : 8
+#      LUT3                        : 2
+#      LUT4                        : 16
+#      MUXCY                       : 7
+#      MUXF5                       : 9
+#      VCC                         : 1
+#      XORCY                       : 8
+# IO Buffers                       : 28
+#      IBUF                        : 19
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-5 
+
+ Number of Slices:                       14  out of    704     1%  
+ Number of 4 input LUTs:                 26  out of   1408     1%  
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    108    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 11.341ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 386 / 9
+-------------------------------------------------------------------------
+Delay:               11.341ns (Levels of Logic = 13)
+  Source:            ina<1> (PAD)
+  Destination:       zero (PAD)
+
+  Data Path: ina<1> to zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.824   0.559  ina_1_IBUF (ina_1_IBUF)
+     LUT2:I0->O            1   0.561   0.000  addblock/Madd_t1_lut<1> (addblock/Madd_t1_lut<1>)
+     MUXCY:S->O            1   0.523   0.000  addblock/Madd_t1_cy<1> (addblock/Madd_t1_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  addblock/Madd_t1_cy<2> (addblock/Madd_t1_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  addblock/Madd_t1_cy<3> (addblock/Madd_t1_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  addblock/Madd_t1_cy<4> (addblock/Madd_t1_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  addblock/Madd_t1_cy<5> (addblock/Madd_t1_cy<5>)
+     XORCY:CI->O           1   0.654   0.357  addblock/Madd_t1_xor<6> (sumResult<6>)
+     MUXF5:S->O            2   0.652   0.488  resultmux/Mmux_t112_f5 (out_6_OBUF)
+     LUT4:I0->O            1   0.561   0.000  zd/y32_SW01 (zd/y32_SW0)
+     MUXF5:I0->O           1   0.229   0.359  zd/y32_SW0_f5 (N29)
+     LUT4:I3->O            1   0.561   0.357  zd/y32 (zero_OBUF)
+     OBUF:I->O                 4.396          zero_OBUF (zero)
+    ----------------------------------------
+    Total                     11.341ns (9.221ns logic, 2.120ns route)
+                                       (81.3% logic, 18.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.24 secs
+ 
+--> 
+
+Total memory usage is 255844 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

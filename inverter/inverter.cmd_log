@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/AS/Desktop/VLSI project/inverter/inverter.xst" -ofn "C:/Users/AS/Desktop/VLSI project/inverter/inverter.syr" 

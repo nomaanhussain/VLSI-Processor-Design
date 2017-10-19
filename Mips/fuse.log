@@ -1,0 +1,61 @@
+Running: E:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o E:/TE/Winter/VLSI/finalProj2/Mips/mips_tb_isim_beh.exe -prj E:/TE/Winter/VLSI/finalProj2/Mips/mips_tb_beh.prj work.mips_tb work.glbl 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/mux2_1.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/inverter.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/zeroDetector.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/orD.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/mux4_1.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/Cond_inv_module.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/andN.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/Adder.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/statelogic.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/RegFile.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/outputlogic.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/mux_2_1_3.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/mux3_1.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/flop.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/ff_en_r.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/ff_en.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/aludec.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/alu.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/dataPath.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/controller.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/mips.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj2/Mips/mips_tb.v" into library work
+Analyzing Verilog file "E:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "E:/TE/Winter/VLSI/finalProj2/Mips/mips_tb.v" Line 41: Port alusrca is not connected to this instance
+Completed static elaboration
+Compiling module statelogic
+Compiling module outputlogic
+Compiling module aludec
+Compiling module controller
+Compiling module mux_2_1_3
+Compiling module ff_en
+Compiling module ff_en_r
+Compiling module flop
+Compiling module mux2_1
+Compiling module mux4_1
+Compiling module mux3_1
+Compiling module RegFile
+Compiling module andN
+Compiling module orD
+Compiling module inverter
+Compiling module Cond_inv_module
+Compiling module Adder
+Compiling module zeroDetector
+Compiling module alu
+Compiling module dataPath
+Compiling module mips
+Compiling module mips_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\mips_tb_isim_beh.exe.sim\libPortability.dll".
+Compiled 23 Verilog Units
+Built simulation executable E:/TE/Winter/VLSI/finalProj2/Mips/mips_tb_isim_beh.exe
+Fuse Memory Usage: 26324 KB
+Fuse CPU Usage: 499 ms

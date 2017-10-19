@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/AS/Desktop/VLSI project/andN/andN.xst" -ofn "C:/Users/AS/Desktop/VLSI project/andN/andN.syr" 
+xst -intstyle ise -ifn "E:/TE/Winter/VLSI/finalProj/andN/andN.xst" -ofn "E:/TE/Winter/VLSI/finalProj/andN/andN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 andN.ngc andN.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o andN_map.ncd andN.ngd andN.pcf 
+par -w -intstyle ise -ol high -t 1 andN_map.ncd andN.ncd andN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml andN.twx andN.ncd -o andN.twr andN.pcf 

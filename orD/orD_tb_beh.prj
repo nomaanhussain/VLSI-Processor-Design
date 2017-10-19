@@ -1,0 +1,3 @@
+verilog work "orD.v"
+verilog work "orD_tb.v"
+verilog work "F:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

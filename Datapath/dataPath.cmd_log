@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/TE/Winter/VLSI/finalProj/Datapath/dataPath.xst" -ofn "E:/TE/Winter/VLSI/finalProj/Datapath/dataPath.syr" 
+xst -intstyle ise -ifn "E:/TE/Winter/VLSI/finalProj/Datapath/dataPath.xst" -ofn "E:/TE/Winter/VLSI/finalProj/Datapath/dataPath.syr" 
+xst -intstyle ise -ifn "E:/TE/Winter/VLSI/finalProj/Datapath/dataPath.xst" -ofn "E:/TE/Winter/VLSI/finalProj/Datapath/dataPath.syr" 
+xst -intstyle ise -ifn "E:/TE/Winter/VLSI/finalProj/Datapath/dataPath.xst" -ofn "E:/TE/Winter/VLSI/finalProj/Datapath/dataPath.syr" 
+xst -intstyle ise -ifn "E:/TE/Winter/VLSI/finalProj2/Datapath/dataPath.xst" -ofn "E:/TE/Winter/VLSI/finalProj2/Datapath/dataPath.syr" 

@@ -1,0 +1,49 @@
+Running: E:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o E:/TE/Winter/VLSI/finalProj/Datapath/dataPath_tb1_isim_beh.exe -prj E:/TE/Winter/VLSI/finalProj/Datapath/dataPath_tb1_beh.prj work.dataPath_tb1 work.glbl 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/mux2_1.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/inverter.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/zeroDetector.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/orD.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/mux4_1.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/Cond_inv_module.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/andN.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/Adder.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/RegFile.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/mux_2_1_3.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/mux3_1.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/flop.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/ff_en_r.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/ff_en.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/alu.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/dataPath.v" into library work
+Analyzing Verilog file "E:/TE/Winter/VLSI/finalProj/Datapath/DataPath_tb.v" into library work
+Analyzing Verilog file "E:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module mux_2_1_3
+Compiling module ff_en
+Compiling module ff_en_r
+Compiling module flop
+Compiling module mux2_1
+Compiling module mux4_1
+Compiling module mux3_1
+Compiling module RegFile
+Compiling module andN
+Compiling module orD
+Compiling module inverter
+Compiling module Cond_inv_module
+Compiling module Adder
+Compiling module zeroDetector
+Compiling module alu
+Compiling module dataPath
+Compiling module dataPath_tb1
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\dataPath_tb1_isim_beh.exe.sim\libPortability.dll".
+Compiled 18 Verilog Units
+Built simulation executable E:/TE/Winter/VLSI/finalProj/Datapath/dataPath_tb1_isim_beh.exe
+Fuse Memory Usage: 26220 KB
+Fuse CPU Usage: 437 ms

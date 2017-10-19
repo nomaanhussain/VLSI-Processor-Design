@@ -1,0 +1,17 @@
+ISim log file
+Running: C:\Users\AS\Desktop\VLSI project\ConditonalInverter\Cond_inv_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/AS/Desktop/VLSI project/ConditonalInverter/Cond_inv_tb_isim_beh.wdb 
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+in = 11001100invert = 11001100out = xxxxxxxx
+in = 11001100invert = 11001100out = 11001100
+Finished circuit initialization process.
+in = 11001100invert = 11001100out = 00110011
+in = 11110000invert = 11110000out = 00110011
+in = 11110000invert = 11110000out = 00001111
+in = 10101100invert = 10101100out = 00001111
+in = 10101100invert = 10101100out = 10101100
